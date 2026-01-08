@@ -2,7 +2,6 @@
   "name": "ronaldtebrake/drupal-coding-standards-skill",
   "description": "Agent Skill for Drupal code review using official coding standards",
   "type": "library",
-  "license": "GPL-2.0-or-later",
   "keywords": [
     "drupal",
     "coding-standards",
