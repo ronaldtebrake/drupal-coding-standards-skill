@@ -18,7 +18,7 @@ Simply install via Composer:
 composer require ronaldtebrake/drupal-coding-standards-skill --dev
 ```
 
-The skill will be installed with all assets already scaffolded in `.claude/skills/drupal-coding-standards-skill/`. 
+The skill will be installed with all assets already scaffolded in `.claude/skills/drupal-coding-standards/`. 
 You can manually copy it, or use `drupal/surge` to have it aggregated for you.
 
 ### Dynamic Context Discovery
@@ -54,13 +54,13 @@ cd drupal-coding-standards-skill
 composer install
 
 # Copy the updated standards to assets directory
-cp -r vendor/drupal/coding_standards/docs .claude/skills/drupal-coding-standards-skill/assets/standards
+cp -r vendor/drupal/coding_standards/docs .claude/skills/drupal-coding-standards/assets/standards
 
 # Commit the updated assets
-git add .claude/skills/drupal-coding-standards-skill/assets/standards/
+git add .claude/skills/drupal-coding-standards/assets/standards/
 Update the version of hte package in composer to indicate we've created a new version
 git add composer.json
 git commit -m "Update coding standards to version X.X"
 ```
 
-The standards are manually copied from `vendor/drupal/coding_standards/docs` to `.claude/skills/drupal-coding-standards-skill/assets/standards/`
+The standards are manually copied from `vendor/drupal/coding_standards/docs` to `.claude/skills/drupal-coding-standards/assets/standards/`

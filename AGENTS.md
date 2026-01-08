@@ -8,7 +8,7 @@ This file provides instructions for AI agents working on this repository, partic
 drupal-coding-standards-skill/
 ├── .claude/
 │   └── skills/
-│       └── drupal-coding-standards-skill/
+│       └── drupal-coding-standards/
 │           ├── SKILL.md                    # Entry point for the skill
 │           ├── standards-index.md        # File type routing table
 │           └── assets/
@@ -48,27 +48,29 @@ This will download the latest standards to `vendor/drupal/coding_standards/docs/
 Copy the updated standards from vendor to the skill's assets directory:
 
 ```bash
-rm -rf .claude/skills/drupal-coding-standards-skill/assets/standards
-cp -r vendor/drupal/coding_standards/docs .claude/skills/drupal-coding-standards-skill/assets/standards
+rm -rf .claude/skills/drupal-coding-standards/assets/standards
+cp -r vendor/drupal/coding_standards/docs .claude/skills/drupal-coding-standards/assets/standards
 ```
 
 **Important**: Verify the copy was successful by checking that files exist:
 ```bash
-ls -la .claude/skills/drupal-coding-standards-skill/assets/standards/
+ls -la .claude/skills/drupal-coding-standards/assets/standards/
 ```
 
 ### Step 4: Update Skill Version
 
 Update the version in the skill's frontmatter:
 
-1. Open `.claude/skills/drupal-coding-standards-skill/SKILL.md`
+1. Open `.claude/skills/drupal-coding-standards/SKILL.md`
 2. Update the `version` field in the YAML frontmatter:
    ```yaml
-   ---
-   name: drupal-coding-standards
-   description: Review code according to Drupal's official coding standards
-   version: 1.1.0  # Update this
-   ---
+    ---
+    name: drupal-coding-standards
+    description: Review code according to Drupal's official coding standards. Provides AI agents with comprehensive guidelines for PHP, JavaScript, CSS, Twig, YAML, SQL, and markup files in Drupal projects. Uses dynamic context discovery to load only relevant standards based on file type being reviewed.
+    metadata:
+    author: ronaldtebrake
+    version: "0.1" # update this
+    ---
    ```
 
 ### Step 5: Update CHANGELOG.md
@@ -92,7 +94,7 @@ Ensure the standards directory structure is correct:
 
 ```bash
 # Check main categories exist
-ls .claude/skills/drupal-coding-standards-skill/assets/standards/
+ls .claude/skills/drupal-coding-standards/assets/standards/
 
 # Should include: php/, javascript/, css/, twig/, yaml/, sql/, markup/, accessibility/, etc.
 ```
@@ -105,8 +107,8 @@ Let the user know you're done, so they can run their checks before committing an
 
 When updating standards, always update:
 
-1. ✅ `.claude/skills/drupal-coding-standards-skill/assets/standards/` - The actual standards files
-2. ✅ `.claude/skills/drupal-coding-standards-skill/SKILL.md` - Version in frontmatter
+1. ✅ `.claude/skills/drupal-coding-standards/assets/standards/` - The actual standards files
+2. ✅ `.claude/skills/drupal-coding-standards/SKILL.md` - Version in frontmatter
 3. ✅ `composer.json` - Dependency version in repositories and require-dev
 4. ✅ `CHANGELOG.md` - Add entry documenting the update
 

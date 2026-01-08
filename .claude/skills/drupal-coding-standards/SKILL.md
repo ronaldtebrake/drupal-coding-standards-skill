@@ -1,7 +1,9 @@
 ---
 name: drupal-coding-standards
-description: Review code according to Drupal's official coding standards
-version: 1.0.0
+description: Review code according to Drupal's official coding standards. Provides AI agents with comprehensive guidelines for PHP, JavaScript, CSS, Twig, YAML, SQL, and markup files in Drupal projects. Uses dynamic context discovery to load only relevant standards based on file type being reviewed.
+metadata:
+  author: ronaldtebrake
+  version: "0.1"
 ---
 
 # Drupal Coding Standards Skill
