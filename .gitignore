@@ -1,0 +1,16 @@
+# Composer (for maintainers only)
+/vendor/
+composer.lock
+
+# Note: assets/standards/ in .claude/skills/drupal-coding-standards-skill/ should be committed
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

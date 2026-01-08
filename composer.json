@@ -1,0 +1,33 @@
+{
+  "name": "ronaldtebrake/drupal-coding-standards-skill",
+  "description": "Agent Skill for Drupal code review using official coding standards",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "drupal",
+    "coding-standards",
+    "agent-skill",
+    "code-review"
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "drupal/coding_standards",
+        "version": "0.1",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://git.drupalcode.org/project/coding_standards.git",
+          "type": "git",
+          "reference": "main"
+        }
+      }
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "drupal/coding_standards": "^0.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
