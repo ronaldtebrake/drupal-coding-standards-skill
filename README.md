@@ -1,3 +1,8 @@
+# Unmaintained
+Best to use https://www.drupal.org/project/ai_best_practices/ instead, that is where I'll focus my efforts to make skills and best practices for the community.
+
+
+
 # Drupal Coding Standards Agent Skill
 
 An [Agent Skill](https://agentskills.io/) that provides AI agents with the ability to review code according to Drupal's official coding standards. This skill uses dynamic context discovery to efficiently load only the relevant standards based on the file type being reviewed.
